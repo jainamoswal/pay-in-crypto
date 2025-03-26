@@ -91,12 +91,12 @@
         "coins": {
             "usdt": {
                 "title": "TRX",
-                "address": "TJQ7r0LW_HYDzppLLW3IONpoTDbKv7SiKvM74nkAfdptARF",
+                "address": "TXHi8XXymDD4CkpfnFKu3YpsDfucaWrfvy",
                 "emoji": 5292038911474804405
             },
             "tron": {
                 "title": "USDT",
-                "address": "TJQ7r0LW_HYDzppLLW3IONpoTDbKv7SiKvM74nkAfdptARF",
+                "address": "TXHi8XXymDD4CkpfnFKu3YpsDfucaWrfvy",
                 "emoji": 5280963835790894176
             }
         }
