@@ -5,7 +5,7 @@
         "coins": {
             "usdt": {
                 "title": "BTC",
-                "address": "bc1q6t58t3u48tgln2yckapcrrhzllrynqs0n75g44",
+                "address": "bc1q45vcy028pc49dl4jkckfyhc8jn4v7ewclhuefg",
                 "emoji": 5280862672131204613
             }
         }
@@ -32,12 +32,12 @@
         "coins": {
             "usdc": {
                 "title": "ETH",
-                "address": "0x11C7A72E71b2084de36977b14350dAF2393f189B",
+                "address": "0x6958F07e23b6268196d6Ed59B2Ce2b1876C3637D",
                 "emoji": 5280895833573697242
             },
             "usdt": {
                 "title": "USDT",
-                "address": "0x11C7A72E71b2084de36977b14350dAF2393f189B",
+                "address": "0x6958F07e23b6268196d6Ed59B2Ce2b1876C3637D",
                 "emoji": 5280963835790894176
             }
         }
@@ -48,12 +48,12 @@
         "coins": {
             "bnb": {
                 "title": "BNB",
-                "address": "0x11C7A72E71b2084de36977b14350dAF2393f189B",
+                "address": "0x6958F07e23b6268196d6Ed59B2Ce2b1876C3637D",
                 "emoji": 5280535348378609271
             },
             "usdt": {
                 "title": "USDT",
-                "address": "0x11C7A72E71b2084de36977b14350dAF2393f189B",
+                "address": "0x6958F07e23b6268196d6Ed59B2Ce2b1876C3637D",
                 "emoji": 5280963835790894176
             }
         }
@@ -64,12 +64,12 @@
         "coins": {
             "sol": {
                 "title": "SOL",
-                "address": "5kXmVqE8ggkAxwM8uJQYL3ACTvKLRhosEGiTtbis7uSz",
+                "address": "4pk4roHkVRA6XgTv5EzeJyrzJewqvwDmBa4Y7KsNyPuJ",
                 "emoji": 5289516520131535412
             },
             "usdt": {
                 "title": "USDT",
-                "address": "5kXmVqE8ggkAxwM8uJQYL3ACTvKLRhosEGiTtbis7uSz",
+                "address": "4pk4roHkVRA6XgTv5EzeJyrzJewqvwDmBa4Y7KsNyPuJ",
                 "emoji": 5280963835790894176
             } 
         }
@@ -91,12 +91,12 @@
         "coins": {
             "usdt": {
                 "title": "TRX",
-                "address": "TXHi8XXymDD4CkpfnFKu3YpsDfucaWrfvy",
+                "address": "TUFAe9duVUMQdrvnQqjAt2fe8pH56qtuVK",
                 "emoji": 5292038911474804405
             },
             "tron": {
                 "title": "USDT",
-                "address": "TXHi8XXymDD4CkpfnFKu3YpsDfucaWrfvy",
+                "address": "TUFAe9duVUMQdrvnQqjAt2fe8pH56qtuVK",
                 "emoji": 5280963835790894176
             }
         }
