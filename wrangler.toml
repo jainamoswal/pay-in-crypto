@@ -1,0 +1,9 @@
+name = "pay-in-crypto-bot"
+compatibility_date = "2024-07-20"
+main = "src/index.ts"
+
+[observability.logs]
+enabled = true
+
+[vars]
+TELEGRAM_SECRET_TOKEN = "asbObetEGTEF3H5YcdM8Cdar3T2JDJVHQb6d9PLWzCye682gUt"
