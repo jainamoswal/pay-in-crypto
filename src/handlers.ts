@@ -5,13 +5,17 @@ import { handleNetworks, handleCryptoPay, handleNetworkPay } from "./plugins/cry
 const keywords = [
   "payment", "pay", "crypto", "wallet address",
   "address", "wallet", "addy", "money", "owe", "eth", "sol",
-  "btc", "bnb", "usdt", "ltc", "trc", "tron", "\\$"
+  "btc", "bnb", "usdt", "ltc", "trc", "tron"
 ];
 
 const regex = new RegExp(`\\b(?:${keywords.join("|")})\\b`, "i");
 
 export function registerHandlers(bot: Bot<Context>) {
-    bot.on('business_message').filter(ctx => regex.test(ctx.msg.text || ctx.msg.caption || ""), handlePay);
+    bot.on('business_message').filter(
+      ctx => regex.test(ctx.msg.text || ctx.msg.caption || ""), 
+      handlePay
+    );
+    bot.command("pay", handlePay);
     bot.callbackQuery("no", handleNoPay);
     bot.callbackQuery("networks", handleNetworks);
     bot.callbackQuery(/^pay_([^_]+)$/, handleCryptoPay);

@@ -12,7 +12,7 @@ export async function handleNetworks(ctx: Context) {
     });
 
     await ctx.editMessageText(
-        "<tg-emoji emoji-id='5278467510604160626'>👍</tg-emoji> Choose a network!", {
+        "<tg-emoji emoji-id='5278467510604160626'>🔗</tg-emoji> Choose a network!", {
         parse_mode: "HTML",
         reply_markup: keyboard,
         business_connection_id: ctx.businessConnectionId
@@ -25,7 +25,7 @@ export async function handleCryptoPay(ctx: Context) {
     const coinInfo = cryptoNetworks[network];
 
     if (!coinInfo) {
-        await ctx.editMessageText("<tg-emoji emoji-id='5278467510604160626'>👍</tg-emoji> Network not found!", {
+        await ctx.editMessageText("<tg-emoji emoji-id='5278467510604160626'>❌</tg-emoji> Network not found!", {
             parse_mode: "HTML",
             business_connection_id: ctx.businessConnectionId,
             reply_markup: new InlineKeyboard().text("Back 🔙", "networks"),
@@ -48,7 +48,7 @@ export async function handleCryptoPay(ctx: Context) {
     keyboard.text("Back 🔙", "networks");
 
     await ctx.editMessageText(
-        `<tg-emoji emoji-id='5269254848703902904'>👍</tg-emoji> Select a token!`, {
+        `<tg-emoji emoji-id='5269254848703902904'>🪙</tg-emoji> Select a token!`, {
         parse_mode: "HTML",
         reply_markup: keyboard,
         business_connection_id: ctx.businessConnectionId
@@ -63,7 +63,7 @@ export async function handleNetworkPay(ctx: Context) {
     const coinInfo = networkInfo.coins[coin];
 
     if (!coinInfo) {
-        await ctx.editMessageText("<tg-emoji emoji-id='5269254848703902904'>👍</tg-emoji> Coin not found!", {
+        await ctx.editMessageText("<tg-emoji emoji-id='5269254848703902904'>❌</tg-emoji> Coin not found!", {
             parse_mode: "HTML",
             business_connection_id: ctx.businessConnectionId,
             reply_markup: new InlineKeyboard().text("Back 🔙", `pay_${network}`),
@@ -79,9 +79,10 @@ export async function handleNetworkPay(ctx: Context) {
 
 
     await ctx.editMessageText(
-        `<b>Network</b>: ${networkInfo.title} <tg-emoji emoji-id='${networkInfo.emoji}'>👍</tg-emoji>\n` +
-        `<b>Token</b>: ${coinInfo.title} <tg-emoji emoji-id='${coinInfo.emoji}'>👍</tg-emoji>\n\n` +
-        `<b>Address</b>: <code>${coinInfo.address}</code>`,
+        `<b>Network</b>: ${networkInfo.title} <tg-emoji emoji-id='${networkInfo.emoji}'>🔗</tg-emoji>\n` +
+        `<b>Token</b>: ${coinInfo.title} <tg-emoji emoji-id='${coinInfo.emoji}'>🪙</tg-emoji>\n\n` +
+        `<b>Address</b>: <code>${coinInfo.address}</code>\n\n` + 
+        `<tg-emoji emoji-id='5359319827569727155'>🧐</tg-emoji>`,
         {
             parse_mode: "HTML",
             reply_markup: keyboard,

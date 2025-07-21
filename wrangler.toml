@@ -1,6 +1,7 @@
 name = "pay-in-crypto-bot"
 compatibility_date = "2024-07-20"
 main = "src/index.ts"
+keep_vars = true
 
 [observability.logs]
 enabled = true
