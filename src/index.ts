@@ -4,22 +4,6 @@ import type { CryptoNetworkMap, Env } from "./types";
 
 const app = new Hono<{ Bindings: Env }>();
 export const cryptoNetworks: CryptoNetworkMap = {
-  ton: {
-    title: "TON (TON)",
-    emoji: 5406976471153545018n,
-    coins: {
-      TON: {
-        title: "TON",
-        address: "UQC2RnutehG1As9I0x8PQ4oJsxdVo5u4WezeVDCMcrvn-mcv",
-        emoji: 5406976471153545018n
-      },
-      usdt: {
-        title: "USDT",
-        address: "UQC2RnutehG1As9I0x8PQ4oJsxdVo5u4WezeVDCMcrvn-mcv",
-        emoji: 5406841020769936275n
-      }
-    }
-  },
   trx: {
     title: "Tron (TRX)",
     emoji: 5406978786140918829n,
@@ -32,6 +16,22 @@ export const cryptoNetworks: CryptoNetworkMap = {
       usdt: {
         title: "USDT",
         address: "TQh2qLZp7HjvVw5sYy9mLh8b3K8ZsG9zj",
+        emoji: 5406841020769936275n
+      }
+    }
+  },
+  ton: {
+    title: "TON (TON)",
+    emoji: 5406976471153545018n,
+    coins: {
+      TON: {
+        title: "TON",
+        address: "UQC2RnutehG1As9I0x8PQ4oJsxdVo5u4WezeVDCMcrvn-mcv",
+        emoji: 5406976471153545018n
+      },
+      usdt: {
+        title: "USDT",
+        address: "UQC2RnutehG1As9I0x8PQ4oJsxdVo5u4WezeVDCMcrvn-mcv",
         emoji: 5406841020769936275n
       }
     }
@@ -74,6 +74,22 @@ export const cryptoNetworks: CryptoNetworkMap = {
       }
     }
   },
+  eth: {
+    title: "Ethereum (ETH)",
+    emoji: 5406930321729948822n,
+    coins: {
+      usdc: {
+        title: "ETH",
+        address: "0x21AE051b6266a980b5D47c2Ad2DdEE1C738E30AB",
+        emoji: 5406930321729948822n
+      },
+      usdt: {
+        title: "USDT",
+        address: "0x21AE051b6266a980b5D47c2Ad2DdEE1C738E30AB",
+        emoji: 5406841020769936275n
+      }
+    }
+  },
   bsc: {
     title: "Binance Smart Chain (BNB)",
     emoji: 5406671889252781489n,
@@ -90,22 +106,6 @@ export const cryptoNetworks: CryptoNetworkMap = {
       }
     }
   },
-  eth: {
-    title: "Ethereum (ETH)",
-    emoji: 5406930321729948822n,
-    coins: {
-      usdc: {
-        title: "ETH",
-        address: "0x21AE051b6266a980b5D47c2Ad2DdEE1C738E30AB",
-        emoji: 5406930321729948822n
-      },
-      usdt: {
-        title: "USDT",
-        address: "0x21AE051b6266a980b5D47c2Ad2DdEE1C738E30AB",
-        emoji: 5406841020769936275n
-      }
-    }
-  }
 };
 
 app.post("/bot/:bot_token", (c) => {
