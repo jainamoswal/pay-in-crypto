@@ -37,11 +37,11 @@ export async function handleCryptoPay(ctx: Context) {
     const coins = Object.entries(coinInfo.coins);
     for (let i = 0; i < coins.length; i += 2) {
         const [coin1, details1] = coins[i];
-        keyboard.text(details1.title, `pay_${network}_${coin1}`);
+        keyboard.text(details1.title, `pay_${network}_${coin1}`).icon(details1.emoji.toString());;
 
         if (i + 1 < coins.length) {
             const [coin2, details2] = coins[i + 1];
-            keyboard.text(details2.title, `pay_${network}_${coin2}`);
+            keyboard.text(details2.title, `pay_${network}_${coin2}`).icon(details2.emoji.toString());;
         }
         keyboard.row();
     }
