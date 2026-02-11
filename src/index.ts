@@ -4,35 +4,40 @@ import type { CryptoNetworkMap, Env } from "./types";
 
 const app = new Hono<{ Bindings: Env }>();
 export const cryptoNetworks: CryptoNetworkMap = {
+  ton: {
+    title: "Ton (TON)",
+    emoji: 5406976471153545018n,
+    coins: {
+      TON: {
+        title: "TON",
+        address: "UQARb-z_g6ap9iqMlmuibZ6naKMEZPwomMxIYZmb8wo611Gd",
+        emoji: 5406976471153545018n
+      },
+      usdt: {
+        title: "USDT",
+        address: "UQARb-z_g6ap9iqMlmuibZ6naKMEZPwomMxIYZmb8wo611Gd",
+        emoji: 5406841020769936275n
+      }
+    }
+  },
   trx: {
     title: "Tron (TRX)",
     emoji: 5406978786140918829n,
     coins: {
       trx: {
         title: "TRX",
-        address: "TQh2qLZp7HjvVw5sYy9mLh8b3K8ZsG9zj",
+        address: "TLoMytWUQbQbqELcffJPj1tfN8Rtca2ydC",
         emoji: 5406978786140918829n
       },
       usdt: {
         title: "USDT",
-        address: "TQh2qLZp7HjvVw5sYy9mLh8b3K8ZsG9zj",
+        address: "TLoMytWUQbQbqELcffJPj1tfN8Rtca2ydC",
         emoji: 5406841020769936275n
-      }
-    }
-  },
-  ton: {
-    title: "TON (TON)",
-    emoji: 5406976471153545018n,
-    coins: {
-      TON: {
-        title: "TON",
-        address: "UQC2RnutehG1As9I0x8PQ4oJsxdVo5u4WezeVDCMcrvn-mcv",
-        emoji: 5406976471153545018n
       },
-      usdt: {
-        title: "USDT",
-        address: "UQC2RnutehG1As9I0x8PQ4oJsxdVo5u4WezeVDCMcrvn-mcv",
-        emoji: 5406841020769936275n
+      usdc: {
+        title: "USDC",
+        address: "TLoMytWUQbQbqELcffJPj1tfN8Rtca2ydC",
+        emoji: 5406575600380974539n
       }
     }
   },
@@ -42,13 +47,18 @@ export const cryptoNetworks: CryptoNetworkMap = {
     coins: {
       sol: {
         title: "SOL",
-        address: "A1ff8CJPjuWRpVT4eyYvDoZbTndnuG7m351PNgw4PNJR",
+        address: "A8ZNf3641MCzFTHN5h3Y4giWUbdCcRMqdu73EA5SHGEa",
         emoji: 5407016676342401484n
       },
       usdt: {
         title: "USDT",
-        address: "A1ff8CJPjuWRpVT4eyYvDoZbTndnuG7m351PNgw4PNJR",
+        address: "A8ZNf3641MCzFTHN5h3Y4giWUbdCcRMqdu73EA5SHGEa",
         emoji: 5406841020769936275n
+      },
+      usdc: {
+        title: "USDC",
+        address: "A8ZNf3641MCzFTHN5h3Y4giWUbdCcRMqdu73EA5SHGEa",
+        emoji: 5406575600380974539n
       }
     }
   },
@@ -58,7 +68,7 @@ export const cryptoNetworks: CryptoNetworkMap = {
     coins: {
       usdt: {
         title: "BTC",
-        address: "bc1qfzkh5k9qwj0qpvtpsp457mxxz3sal9aqc22vdf",
+        address: "bc1qa7lh6c3rew3tawxpu6gfyupx54hcn4uges36qt",
         emoji: 5409133571233319295n
       }
     }
@@ -69,7 +79,7 @@ export const cryptoNetworks: CryptoNetworkMap = {
     coins: {
       usdt: {
         title: "LTC",
-        address: "ltc1qlld0jjeexj2dv76asmxmpr3cgmaulxr3wyar5h",
+        address: "ltc1q5fgf58v386yvrrmkeav478h4vjgrkr83q9u7vd",
         emoji: 5407128573125366746n
       }
     }
@@ -78,15 +88,20 @@ export const cryptoNetworks: CryptoNetworkMap = {
     title: "Ethereum (ETH)",
     emoji: 5406930321729948822n,
     coins: {
-      usdc: {
+      eth: {
         title: "ETH",
-        address: "0x21AE051b6266a980b5D47c2Ad2DdEE1C738E30AB",
+        address: "0x000cf1Cd76815f0bc3A87Ea9806bC7b259676176",
         emoji: 5406930321729948822n
       },
       usdt: {
         title: "USDT",
-        address: "0x21AE051b6266a980b5D47c2Ad2DdEE1C738E30AB",
+        address: "0x000cf1Cd76815f0bc3A87Ea9806bC7b259676176",
         emoji: 5406841020769936275n
+      },
+      usdc: {
+        title: "USDC",
+        address: "0x000cf1Cd76815f0bc3A87Ea9806bC7b259676176",
+        emoji: 5406575600380974539n
       }
     }
   },
@@ -96,13 +111,18 @@ export const cryptoNetworks: CryptoNetworkMap = {
     coins: {
       bnb: {
         title: "BNB",
-        address: "0x21AE051b6266a980b5D47c2Ad2DdEE1C738E30AB",
+        address: "0x000cf1Cd76815f0bc3A87Ea9806bC7b259676176",
         emoji: 5406671889252781489n
       },
       usdt: {
         title: "USDT",
-        address: "0x21AE051b6266a980b5D47c2Ad2DdEE1C738E30AB",
+        address: "0x000cf1Cd76815f0bc3A87Ea9806bC7b259676176",
         emoji: 5406841020769936275n
+      },
+      usdc: {
+        title: "USDC",
+        address: "0x000cf1Cd76815f0bc3A87Ea9806bC7b259676176",
+        emoji: 5406575600380974539n
       }
     }
   },
