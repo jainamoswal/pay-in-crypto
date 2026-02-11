@@ -7,7 +7,7 @@ export async function handleNetworks(ctx: Context) {
 
     Object.keys(cryptoNetworks).forEach((network) => {
         const networkInfo = cryptoNetworks[network];
-        keyboard.text(networkInfo.title, `pay_${network}`)
+        keyboard.text(networkInfo.title, `pay_${network}`).icon(networkInfo.emoji.toString());
         keyboard.row();
     });
 
