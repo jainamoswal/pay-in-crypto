@@ -3,7 +3,7 @@ import { Context, InlineKeyboard } from "grammy";
 const startMessage = `<b>Looks like you wanna pay. Do you ?</b> <tg-emoji emoji-id='5361813743279821319'>🤔</tg-emoji> 
 
 <tg-emoji emoji-id='5274099962655816924'>❗️</tg-emoji> Addresses are updated frequntly.
-<tg-emoji emoji-id='5420323339723881652'>⚠️</tg-emoji> <u>Always pull this message to get latest one.</u>
+<tg-emoji emoji-id='5420323339723881652'>⚠️</tg-emoji> <u> Please refresh this message to ensure you're using the latest address.</u>
 
 <blockquote>Beep boop, <b>I'm a Bot</b>! <tg-emoji emoji-id='5317036836613272917'>🤖</tg-emoji></blockquote>
 `
