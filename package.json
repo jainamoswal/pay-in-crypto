@@ -8,12 +8,12 @@
   },
   "dependencies": {
     "@grammyjs/chat-members": "^1.2.0",
-    "@tsndr/cloudflare-worker-jwt": "^3.2.0",
-    "grammy": "^1.36.3",
-    "hono": "^4.8.3"
+    "@tsndr/cloudflare-worker-jwt": "^3.2.1",
+    "grammy": "^1.40.0",
+    "hono": "^4.11.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240604.0",
-    "typescript": "^5.4.5"
+    "@cloudflare/workers-types": "^4.20260210.0",
+    "typescript": "^5.9.3"
   }
 }
