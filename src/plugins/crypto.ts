@@ -3,6 +3,7 @@ import { Context, InlineKeyboard } from "grammy";
 
 
 export async function handleNetworks(ctx: Context) {
+    await ctx.answerCallbackQuery();
     const keyboard = new InlineKeyboard();
 
     Object.keys(cryptoNetworks).forEach((network) => {
@@ -58,6 +59,7 @@ export async function handleCryptoPay(ctx: Context) {
 
 
 export async function handleNetworkPay(ctx: Context) {
+    await ctx.answerCallbackQuery();
     const [_, network, coin] = ctx.match!;
     const networkInfo = cryptoNetworks[network];
     const coinInfo = networkInfo.coins[coin];
